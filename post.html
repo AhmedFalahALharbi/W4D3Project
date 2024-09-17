@@ -1,0 +1,196 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+<body class="bg-gradient-to-r from-cyan-400 to-cyan-900 font-mono text-teal-50">
+    
+<nav
+class="relative flex w-full flex-wrap items-center justify-between  bg-gradient-to-r from-cyan-500 to-cyan-950  py-2 shadow-dark-mild  lg:py-4"
+data-twe-navbar-ref>
+<div class="flex w-full flex-wrap items-center justify-between px-3">
+  <div>
+    <a class="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="#">
+        <h1 id="fullName" class="font-bold font-mono text-3xl text-center text-teal-100 hover:text-teal-400 active:text-teal-600 p-3"></h1>
+    </a>
+  </div>
+
+  <!-- Hamburger button for mobile view -->
+  <button
+    class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+    type="button"
+    data-twe-collapse-init
+    data-twe-target="#navbarSupportedContent4"
+    aria-controls="navbarSupportedContent4"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <!-- Hamburger icon -->
+    <span
+      class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+          clip-rule="evenodd" />
+      </svg>
+    </span>
+  </button>
+
+  <!-- Collapsible navbar container -->
+  <div
+    class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+    id="navbarSupportedContent4"
+    data-twe-collapse-item>
+    <!-- Left links -->
+    <ul
+      class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
+      data-twe-navbar-nav-ref>
+      <!-- Home link -->
+      <li
+        class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+        data-twe-nav-item-ref>
+        <a
+          class="text-teal-100 transition duration-200 hover:text-teal-400 active:text-teal-600 hover:ease-in-out focus:text-teal-50 lg:px-2"
+          aria-current="page"
+          href="home.html"
+          data-twe-nav-link-ref
+          >Home</a
+        >
+      </li>
+      <li
+        class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+        data-twe-nav-item-ref>
+        <a
+          class="transition duration-200 text-teal-100 hover:text-teal-400 active:text-teal-600 hover:ease-in-out focus:text-teal-50 lg:px-2"
+
+          aria-current="page"
+          href="profile.html"
+          data-twe-nav-link-ref
+          >Profile</a
+        >
+      </li>
+      <li
+        class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+        data-twe-nav-item-ref>
+        <a
+          class="transition duration-200 text-teal-100 hover:text-teal-400 active:text-teal-600 hover:ease-in-out focus:text-teal-50 lg:px-2"
+
+          aria-current="page"
+          href="post.html"
+          data-twe-nav-link-ref
+          >Post</a
+        >
+      </li>
+    </ul>
+
+    <div class="flex items-center">
+        <a
+        href="index.html"
+        type="button"
+        id="logoutbtn"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
+        class="me-3 inline-block rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-teal-50 hover:text-teal-200 focus:text-teal-300 focus:outline-none focus:ring-0 active:text-teal-700  ">
+        Log Out
+    </a>
+      <button
+        type="button"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
+        class="w-16 h-16">
+        <img src="https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/64b44ab3fd3614a327b1cc01_-11.png" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+</nav>
+    <section class="h-screen ">
+        <div class="h-5/6 w-5/6">
+          <!-- Left column container with background-->
+          <div
+            class="flex h-full flex-wrap items-center justify-center lg:justify-between">
+            <div
+              class="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
+              <img
+                src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                class="w-full"
+                alt="Sample image" />
+            </div>
+            
+      
+            <!-- Right column container -->
+            <div class="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12 border-solid border-2 rounded-lg border-cyan-300 p-5 shadow-2xl shadow-cyan-800">
+              <form>
+                <!--Sign in section-->
+                <div
+                  class="flex flex-row items-center justify-center lg:justify-start text-teal-50 font-bold">
+                  <p class="mb-2 me-4 text-lg">New Post</p>      
+                </div>
+                <div class="relative mb-3" data-twe-input-wrapper-init>                
+                    <input
+                      class="peer block min-h-[auto] w-full rounded border-b border-solid bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+                      id="title"
+                      placeholder="title" />
+                    <label
+                      for="title"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-slate-100 transition-all duration-200 ease-out -translate-y-[1.15rem] scale-[0.8] text-primary peer-data-[twe-input-state-active]:-translate-y-[1.15rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                      >Title
+                    </label>
+                  </div>
+                  <div class="relative mb-3" data-twe-input-wrapper-init>
+                    <textarea
+                      class="peer block min-h-[auto] w-full rounded border-b-2 border-r-2 mt-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+                      id="postContent"
+                      rows="3"
+                      placeholder="Your message"></textarea>
+                    <label
+                      for="postContent"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-cyan-50 transition-all duration-200 ease-out -translate-y-[0.9rem] scale-[0.8] text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >Post Content</label
+                    >
+                  </div>
+                  <div class="relative mb-3" data-twe-input-wrapper-init>                
+                    <input
+                      class="peer block min-h-[auto] w-full rounded border-b border-solid bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+                      id="imgsrc"
+                      placeholder="imgsrc" />
+                    <label
+                      for="imgsrc"
+                      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-slate-100 transition-all duration-200 ease-out -translate-y-[1.15rem] scale-[0.8] text-primary peer-data-[twe-input-state-active]:-translate-y-[1.15rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                      >image source:
+                    </label>
+                  </div>
+                  <div class="relative mb-3" data-twe-input-wrapper-init>
+                    <button
+                    id="newpost"
+                    type="button"
+                    class="inline-block w-2/6 rounded-3xl bg-sky-500 px-7 pb-2 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-sky-3 transition duration-150 ease-in-out hover:bg-sky-accent-300 hover:shadow-sky-2 focus:bg-sky-accent-300 focus:shadow-sky-2 focus:outline-none focus:ring-0 active:bg-sky-600 active:shadow-sky-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light">
+                    Post
+                  </button>
+                  </div>
+      
+                
+                  
+                </div>
+                
+      
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="post.js">
+      twt.init();
+    </script>
+</body>
+</html>
